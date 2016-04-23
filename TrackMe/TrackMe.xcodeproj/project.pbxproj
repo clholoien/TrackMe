@@ -16,6 +16,9 @@
 		FB3DA9ED1CCB3D15008DF8DE /* TrackMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3DA9EC1CCB3D15008DF8DE /* TrackMeTests.swift */; };
 		FB3DA9F81CCB3D15008DF8DE /* TrackMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3DA9F71CCB3D15008DF8DE /* TrackMeUITests.swift */; };
 		FB6904191CCB4CE2004C7C24 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6904181CCB4CE2004C7C24 /* BaseService.swift */; };
+		FB70DDED1CCC1D6C00BA1B15 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70DDEC1CCC1D6C00BA1B15 /* TrackViewController.swift */; };
+		FBB2E8D81CCC2B310081C841 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2E8D71CCC2B310081C841 /* SettingsViewController.swift */; };
+		FBB2E8DA1CCC2B550081C841 /* AddTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2E8D91CCC2B550081C841 /* AddTrackingViewController.swift */; };
 		FBCD3D421CCB58630082A594 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD3D411CCB58630082A594 /* CreateAccountViewController.swift */; };
 		FBCD3D441CCB58720082A594 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD3D431CCB58720082A594 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		FB3DA9F71CCB3D15008DF8DE /* TrackMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMeUITests.swift; sourceTree = "<group>"; };
 		FB3DA9F91CCB3D15008DF8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB6904181CCB4CE2004C7C24 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		FB70DDEC1CCC1D6C00BA1B15 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		FBB2E8D71CCC2B310081C841 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FBB2E8D91CCC2B550081C841 /* AddTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTrackingViewController.swift; sourceTree = "<group>"; };
 		FBCD3D411CCB58630082A594 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		FBCD3D431CCB58720082A594 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,10 +136,13 @@
 				F90982761CCC19A5002C5677 /* RestApiManager.swift */,
 				FB3DA9D71CCB3D15008DF8DE /* AppDelegate.swift */,
 				FB6904181CCB4CE2004C7C24 /* BaseService.swift */,
-				FB3DA9DB1CCB3D15008DF8DE /* Main.storyboard */,
+				FB70DDEC1CCC1D6C00BA1B15 /* TrackViewController.swift */,
+				FBB2E8D71CCC2B310081C841 /* SettingsViewController.swift */,
+				FBB2E8D91CCC2B550081C841 /* AddTrackingViewController.swift */,
 				FBCD3D411CCB58630082A594 /* CreateAccountViewController.swift */,
 				FBCD3D431CCB58720082A594 /* LoginViewController.swift */,
 				FB3DA9DE1CCB3D15008DF8DE /* Assets.xcassets */,
+				FB3DA9DB1CCB3D15008DF8DE /* Main.storyboard */,
 				FB3DA9E01CCB3D15008DF8DE /* LaunchScreen.storyboard */,
 				FB3DA9E31CCB3D15008DF8DE /* Info.plist */,
 			);
@@ -342,9 +351,12 @@
 			files = (
 				FBCD3D441CCB58720082A594 /* LoginViewController.swift in Sources */,
 				FBCD3D421CCB58630082A594 /* CreateAccountViewController.swift in Sources */,
+				FBB2E8D81CCC2B310081C841 /* SettingsViewController.swift in Sources */,
 				FB3DA9D81CCB3D15008DF8DE /* AppDelegate.swift in Sources */,
 				F90982771CCC19A5002C5677 /* RestApiManager.swift in Sources */,
+				FBB2E8DA1CCC2B550081C841 /* AddTrackingViewController.swift in Sources */,
 				FB6904191CCB4CE2004C7C24 /* BaseService.swift in Sources */,
+				FB70DDED1CCC1D6C00BA1B15 /* TrackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
