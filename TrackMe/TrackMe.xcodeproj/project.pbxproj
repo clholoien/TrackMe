@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACB780E37365A0B6A82B3743 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C61B445C917061E3E51FD /* Pods.framework */; };
+		F90982771CCC19A5002C5677 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90982761CCC19A5002C5677 /* RestApiManager.swift */; };
 		FB3DA9D81CCB3D15008DF8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3DA9D71CCB3D15008DF8DE /* AppDelegate.swift */; };
 		FB3DA9DD1CCB3D15008DF8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3DA9DB1CCB3D15008DF8DE /* Main.storyboard */; };
 		FB3DA9DF1CCB3D15008DF8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3DA9DE1CCB3D15008DF8DE /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		317C61B445C917061E3E51FD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F38A9F709022D02DC1BE113 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CC29E266FAB06719DB8EDA53 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F90982761CCC19A5002C5677 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = ../../RestApiManager.swift; sourceTree = "<group>"; };
 		FB3DA9D41CCB3D14008DF8DE /* TrackMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3DA9D71CCB3D15008DF8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3DA9DC1CCB3D15008DF8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		FB3DA9D61CCB3D14008DF8DE /* TrackMe */ = {
 			isa = PBXGroup;
 			children = (
+				F90982761CCC19A5002C5677 /* RestApiManager.swift */,
 				FB3DA9D71CCB3D15008DF8DE /* AppDelegate.swift */,
 				FB6904181CCB4CE2004C7C24 /* BaseService.swift */,
 				FB3DA9DB1CCB3D15008DF8DE /* Main.storyboard */,
@@ -340,6 +343,7 @@
 				FBCD3D441CCB58720082A594 /* LoginViewController.swift in Sources */,
 				FBCD3D421CCB58630082A594 /* CreateAccountViewController.swift in Sources */,
 				FB3DA9D81CCB3D15008DF8DE /* AppDelegate.swift in Sources */,
+				F90982771CCC19A5002C5677 /* RestApiManager.swift in Sources */,
 				FB6904191CCB4CE2004C7C24 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
