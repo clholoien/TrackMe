@@ -46,7 +46,7 @@ class CreateAccountViewController: UIViewController {
                             NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                             NSUserDefaults.standardUserDefaults().synchronize()
                             print("Account Created on TrackMe")
-                            //
+                            
                             self.dismissViewControllerAnimated(true,completion: nil)
                         }
                         else

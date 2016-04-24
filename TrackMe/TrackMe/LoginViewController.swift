@@ -51,6 +51,7 @@ class LoginViewController: UIViewController {
                 {
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                     print("User has Logged on to TrackMe")
+                    performSegueWithIdentifier("loginSegue", sender: self)
                 }
                 else
                 {
