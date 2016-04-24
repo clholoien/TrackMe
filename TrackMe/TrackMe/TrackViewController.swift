@@ -10,8 +10,21 @@ import UIKit
 
 class TrackViewController: UIViewController {
 
+    @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var addTrackingButton: UIToolbar!
+    @IBOutlet weak var settingsButton: UIToolbar!
+    let userRef = FIREBASE_REF.childByAppendingPath(CURRENT_USER.authData.uid)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userShipmentsRef = userRef.childByAppendingPath("Shipments")
+        
+        userShipmentsRef.observeEventType(.Value, withBlock: { snapshot in
+            snapshot
+            
+                }, withCancelBlock: { error in
+                print(error.description)
+        })
 
         // Do any additional setup after loading the view.
     }
@@ -32,4 +45,10 @@ class TrackViewController: UIViewController {
     }
     */
 
+    @IBAction func logoutAction(sender: AnyObject) {
+        CURRENT_USER.unauth()
+        NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "uid")
+        print("User has Logged off of TrackMe")
+        performSegueWithIdentifier("logoutSegue", sender: self)
+    }
 }

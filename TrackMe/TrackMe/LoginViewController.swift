@@ -14,20 +14,19 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool)
     {
         super.viewDidAppear(animated)
         
+        //Segue to Tracking view if already logged in.
         if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil && CURRENT_USER.authData != nil
         {
-            self.logoutButton.hidden = false
+            performSegueWithIdentifier("loginSegue", sender: self)
         }
     }
 
@@ -38,16 +37,7 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    //Action for when the login buton is pressed.
     @IBAction func loginAction(sender: AnyObject) {
         
         let email = self.emailTextField.text
@@ -61,7 +51,6 @@ class LoginViewController: UIViewController {
                 {
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                     print("User has Logged on to TrackMe")
-                    self.logoutButton.hidden = false
                 }
                 else
                 {
@@ -78,11 +67,4 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func logoutAction(sender: AnyObject) {
-        
-        CURRENT_USER.unauth()
-        NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "uid")
-        print("User has Logged off of TrackMe")
-        self.logoutButton.hidden = true
-    }
 }
